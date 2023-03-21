@@ -10,6 +10,11 @@ def encode(password):
     return encoded_pswrd
 
 
+# Takes a string of ints and shifts each int back by 3
+def decode(password):
+    pass
+
+
 # Prints menu options
 def print_menu():
     print("Menu")
@@ -32,7 +37,7 @@ def main():
             print("Your password has been encoded and stored!")
             print()
         elif menu_choice == 2:
-            print(f"The encoded password is {encoded_pswrd}, and the original password is {pswrd_to_encode}.")
+            print(f"The encoded password is {encoded_pswrd}, and the original password is {decode(encoded_pswrd)}.")
             print()
         elif menu_choice == 3:
             keep_going = False
