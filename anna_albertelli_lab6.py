@@ -12,7 +12,11 @@ def encode(password):
 
 # Takes a string of ints and shifts each int back by 3
 def decode(password):
-    pass
+    decode_password = ""
+    for num in password:  # iterates through each number in encoded password
+        decode_int = (int(num) - 3) % 10  # subtracts 3 to each integer digit, returns a value 0-9 b/c of % 10
+        decode_password += str(decode_int)
+    return decode_password
 
 
 # Prints menu options
